@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.tabs__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 47.99875em) {
+  .tabs {
+    gap: 32px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .tabs__title .button__icon {
+    display: none;
+  }
+}

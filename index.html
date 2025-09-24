@@ -1,0 +1,1413 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/common.min.js?v=1758732296593"></script>
+		<script type="module" crossorigin="" src="./js/popup.min.js?v=1758732296593"></script>
+		<script type="module" crossorigin="" src="./js/tabs.min.js?v=1758732296593"></script>
+		<script type="module" crossorigin="" src="./js/faq.min.js?v=1758732296593"></script>
+		<script type="module" crossorigin="" src="./js/areasofwork.min.js?v=1758732296593"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1758732296593">
+		<link rel="stylesheet" crossorigin="" href="./css/tabs.min.css?v=1758732296593">
+		<link rel="stylesheet" crossorigin="" href="./css/faq.min.css?v=1758732296593">
+		<link rel="stylesheet" crossorigin="" href="./css/areasofwork.min.css?v=1758732296593">
+		<link rel="stylesheet" crossorigin="" href="./css/services.min.css?v=1758732296593">
+		<link rel="stylesheet" crossorigin="" href="./css/projects.min.css?v=1758732296593">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Услуги</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Реализованные проекты</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Сотрудничество</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">О нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Блог</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<a href="/" class="header__logo">
+							<img src="./assets/img/logo-dark.svg" alt="logo" loading="lazy">
+						</a>
+						<div class="header__actions fixed-block">
+							<a data-fls-popup-link="popup" href="#" class="header__contactus">
+								<span class="header__contactus-text">Связаться с нами</span>
+								<span class="header__contactus-icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</a>
+							<a href="tel:+352661442982" class="header__action">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.494 5.46C2.20749 8.24248 3.65555 10.7821 5.68671 12.8133C7.71788 14.8445 10.2575 16.2925 13.04 17.006C15.181 17.551 17 15.71 17 13.5L17 12.5C17 11.948 16.551 11.505 16.002 11.45C15.0916 11.3595 14.1979 11.1445 13.346 10.811L11.826 12.331C9.35113 11.1446 7.35541 9.14887 6.169 6.674L7.689 5.154C7.35516 4.30211 7.13982 3.40844 7.049 2.498C6.995 1.948 6.552 1.5 6 1.5L5 1.5C2.79 1.5 0.949 3.319 1.494 5.46Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<a href="mailto:alex.tsapar@gmail.com" class="header__action">
+								<svg width="22" height="15" viewbox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.75 2.25L20.75 12.75C20.75 13.1478 20.592 13.5294 20.3107 13.8107C20.0294 14.092 19.6478 14.25 19.25 14.25L2.75 14.25C2.35217 14.25 1.97064 14.092 1.68934 13.8107C1.40803 13.5294 1.25 13.1478 1.25 12.75L1.25 2.25M20.75 2.25C20.75 1.85218 20.592 1.47065 20.3107 1.18934C20.0294 0.908036 19.6478 0.750001 19.25 0.750001L2.75 0.75C2.35218 0.75 1.97064 0.908035 1.68934 1.18934C1.40804 1.47064 1.25 1.85218 1.25 2.25M20.75 2.25L11.8535 8.409C11.6027 8.58253 11.305 8.67549 11 8.67549C10.695 8.67549 10.3973 8.58253 10.1465 8.409L1.25 2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<div class="header__lang lang-block">
+							<a href="#" class="lang-block__link is-active">Ru</a>
+							<a href="#" class="lang-block__link">En</a>
+							<a href="#" class="lang-block__link">Fr</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero fixed-block-hide">
+					<div class="hero__container">
+						<video src="./assets/video/main.mp4" class="hero__bg" muted loop autoplay playsinline=""></video>
+						<!-- <img src="@img/video.jpg" class="hero__bg" alt="Image"> -->
+						<div class="hero__head">
+							<div class="hero__head-left"></div>
+							<div class="hero__head-center">
+								<a href="/" class="hero__logo">
+									<img src="./assets/img/logo.svg" alt="logo">
+								</a>
+							</div>
+							<div class="hero__head-right">
+								<button data-fls-popup-link="popup" type="button" class="hero__link contactus-link">
+									<span class="contactus-link__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5 0.999999C11.5 0.723857 11.2761 0.499999 11 0.499999L6.5 0.5C6.22386 0.499999 6 0.723857 6 0.999999C6 1.27614 6.22386 1.5 6.5 1.5L10.5 1.5L10.5 5.5C10.5 5.77614 10.7239 6 11 6C11.2761 6 11.5 5.77614 11.5 5.5L11.5 0.999999ZM1 11L1.35355 11.3536L11.3536 1.35355L11 0.999999L10.6464 0.646446L0.646447 10.6464L1 11Z" fill="currentColor"></path>
+										</svg>
+									</span>
+									<span class="contactus-link__text">Связаться с нами</span>
+								</button>
+							</div>
+						</div>
+						<div class="hero__body">
+							<h1 class="hero__title title title--h1">Строительные работы под ключ в Люксембурге</h1>
+							<div class="hero__text">
+								<p>Мы создаем коммерческие и жилые пространства под ключ — качественно и в срок</p>
+							</div>
+							<div class="hero__btns">
+								<a href="#" class="hero__btn button">
+									<span class="button__body">Заказать услуги</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</a>
+								<a href="#" class="hero__btn button-white">
+									<span class="button__body">Сотрудничество</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="hero__scroll">
+							<svg class="hero__scroll-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10 15C10 12.3478 11.0536 9.8043 12.9289 7.92893C14.8043 6.05357 17.3478 5 20 5C22.6522 5 25.1957 6.05357 27.0711 7.92893C28.9464 9.8043 30 12.3478 30 15V25C30 27.6522 28.9464 30.1957 27.0711 32.0711C25.1957 33.9464 22.6522 35 20 35C17.3478 35 14.8043 33.9464 12.9289 32.0711C11.0536 30.1957 10 27.6522 10 25V15Z" stroke="currentColor" stroke-linejoin="round"></path>
+								<path d="M20 11.6667V18.3334" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+							<svg class="hero__scroll-arrow" width="8" height="26" viewbox="0 0 8 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3.64645 25.3536C3.84171 25.5488 4.15829 25.5488 4.35355 25.3536L7.53553 22.1716C7.7308 21.9763 7.7308 21.6597 7.53553 21.4645C7.34027 21.2692 7.02369 21.2692 6.82843 21.4645L4 24.2929L1.17157 21.4645C0.97631 21.2692 0.659727 21.2692 0.464465 21.4645C0.269203 21.6597 0.269203 21.9763 0.464465 22.1716L3.64645 25.3536ZM4 0L3.5 -2.18557e-08L3.5 25L4 25L4.5 25L4.5 2.18557e-08L4 0Z" fill="currentColor"></path>
+							</svg>
+						</div>
+					</div>
+				</section>
+				<section class="why">
+					<div class="why__container">
+						<div class="why__head lines-decor">
+							<h2 class="why__title title title--h2">
+								Почему
+								<br>
+								<span>выбирают</span>
+								нас
+							</h2>
+						</div>
+						<div class="why__items">
+							<div class="why__item">
+								<div class="why__item-icon">
+									<img src="./assets/img/icons/blocks.svg" alt="Image" loading="lazy">
+								</div>
+								<div class="why__item-body">
+									<div class="why__item-num">01</div>
+									<div class="why__item-content">
+										<div class="why__item-title">Только проверенные материалы</div>
+										<div class="why__item-text">
+											Это гарантирует долговечность, безопасность и высокое качество всех выполненных работ
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__item-icon">
+									<img src="./assets/img/icons/people-plus.svg" alt="Image" loading="lazy">
+								</div>
+								<div class="why__item-body">
+									<div class="why__item-num">02</div>
+									<div class="why__item-content">
+										<div class="why__item-title">Профессиональная команда экспертов</div>
+										<div class="why__item-text">
+											Мы справляемся как с простыми задачами, так и со сложными проектами любой сложности
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__item-icon">
+									<img src="./assets/img/icons/big-house.svg" alt="Image" loading="lazy">
+								</div>
+								<div class="why__item-body">
+									<div class="why__item-num">03</div>
+									<div class="why__item-content">
+										<div class="why__item-title">
+											Решения, созданные
+											<br>
+											под вас
+										</div>
+										<div class="why__item-text">
+											Мы предлагаем индивидуальные решения, которые максимально соответствуют вашим целям
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="why__item">
+								<div class="why__item-icon">
+									<img src="./assets/img/icons/calendar.svg" alt="Image" loading="lazy">
+								</div>
+								<div class="why__item-body">
+									<div class="why__item-num">04</div>
+									<div class="why__item-content">
+										<div class="why__item-title">
+											Работаем строго
+											<br>
+											по графику
+										</div>
+										<div class="why__item-text">
+											Четкий план работ и контроль на каждом этапе позволяют нам сдавать проекты вовремя
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="why__decor-1">
+							<img src="./assets/img/decor.svg" alt="Image" loading="lazy">
+						</div>
+						<div class="why__decor-2">
+							<img src="./assets/img/decor.svg" alt="Image" loading="lazy">
+						</div>
+					</div>
+				</section>
+				<section class="areasofwork">
+					<div class="areasofwork__container">
+						<div class="areasofwork__head">
+							<div class="areasofwork__top lines-decor">
+								<h2 class="areasofwork__title title title--h2">
+									<span>Направления</span>
+									работ
+								</h2>
+							</div>
+							<div class="areasofwork__text">
+								Все этапы — от проекта до финальной отделки. Чёткие сроки, прозрачные сметы, гарантия качества
+							</div>
+						</div>
+						<div data-fls-tabs="" data-fls-tabs-animate="" class="areasofwork__body tabs">
+							<nav data-fls-tabs-titles="" class="tabs__navigation">
+								<button type="button" class="tabs__title button-empty button-empty--white --tab-active">
+									<span class="button__body">Коммерческие</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</button>
+								<button type="button" class="tabs__title button-empty button-empty--white">
+									<span class="button__body">Жилые</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</button>
+							</nav>
+							<div data-fls-tabs-body="" class="tabs__content">
+								<div class="tabs__body">
+									<div data-fls-accordion-block="" class="accordion-block">
+										<div class="accordion-block__item is-open">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Капитальный и косметический ремонт квартир</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														От легкого обновления интерьера до полной реконструкции. Помогаем создать
+                                        уютное, стильное и функциональное пространство для жизни.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-5.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Ремонт и отделка санузлов и кухонь</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Практичные и современные решения с учетом эргономики и инженерных особенностей.
+                                        Используем влагостойкие и долговечные
+                                        материалы.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-6.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Перепланировка</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Меняем зонирование и оптимизируем пространство квартиры. Разрабатываем новые
+                                        решения в соответствии с нормами и
+                                        потребностями семьи.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-7.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Кровельные работы</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Установка и ремонт кровли для частных домов. Гарантируем надежную защиту,
+                                        долговечность и сохранность жилья при любых
+                                        погодных условиях.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-8.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Капитальный ремонт</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Полное обновление помещений: замена коммуникаций, отделка, модернизация и
+                                        перепланировка. Даем объекту новую жизнь.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-9.webp">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div data-fls-accordion-block="" class="accordion-block">
+										<div class="accordion-block__item is-open">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Ремонт и отделка санузлов и кухонь</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Практичные и современные решения с учетом эргономики и инженерных особенностей.
+                                        Используем влагостойкие и долговечные
+                                        материалы.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-6.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Капитальный и косметический ремонт квартир</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														От легкого обновления интерьера до полной реконструкции. Помогаем создать
+                                        уютное, стильное и функциональное пространство для жизни.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-5.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Перепланировка</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Меняем зонирование и оптимизируем пространство квартиры. Разрабатываем новые
+                                        решения в соответствии с нормами и
+                                        потребностями семьи.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-7.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Кровельные работы</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Установка и ремонт кровли для частных домов. Гарантируем надежную защиту,
+                                        долговечность и сохранность жилья при любых
+                                        погодных условиях.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-8.webp">
+												</div>
+											</div>
+										</div>
+										<div class="accordion-block__item">
+											<div class="accordion-block__head">
+												<a href="#" class="accordion-block__title">Капитальный ремонт</a>
+												<button type="button" class="accordion-block__toggle">
+													<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.0059 11.5C11.282 11.5 11.5059 11.2761 11.5059 11L11.5059 6.5C11.5059 6.22386 11.282 6 11.0059 6C10.7297 6 10.5059 6.22386 10.5059 6.5L10.5059 10.5L6.50586 10.5C6.22972 10.5 6.00586 10.7239 6.00586 11C6.00586 11.2761 6.22972 11.5 6.50586 11.5L11.0059 11.5ZM1.00586 1L0.652306 1.35355L10.6523 11.3536L11.0059 11L11.3594 10.6464L1.35941 0.646447L1.00586 1Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+											<div class="accordion-block__body">
+												<div class="accordion-block__content">
+													<h4>Полный набор услуг</h4>
+													<p>
+														Полное обновление помещений: замена коммуникаций, отделка, модернизация и
+                                        перепланировка. Даем объекту новую жизнь.
+													</p>
+												</div>
+												<div class="accordion-block__img">
+													<img alt="Image" loading="lazy" src="./assets/img/works/image-9.webp">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="areasofwork__all link">
+							<span>Смотреть все услуги</span>
+							<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+							</svg>
+						</a>
+					</div>
+				</section>
+				<section class="projects">
+					<div class="projects__container">
+						<div class="projects__head">
+							<div class="projects__top lines-decor">
+								<h2 class="projects__title title title--h2">
+									<span>Реализованные</span>
+									проекты
+								</h2>
+							</div>
+							<div class="projects__text">
+								Все этапы — от проекта до финальной отделки. Чёткие сроки, прозрачные сметы, гарантия качества
+							</div>
+						</div>
+						<div data-fls-tabs="" data-fls-tabs-animate="" class="projects__body tabs">
+							<nav data-fls-tabs-titles="" class="tabs__navigation">
+								<button type="button" class="tabs__title button-empty button-empty--dark --tab-active">
+									<span class="button__body">Коммерческие</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</button>
+								<button type="button" class="tabs__title button-empty button-empty--dark">
+									<span class="button__body">Жилые</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</button>
+							</nav>
+							<div data-fls-tabs-body="" class="tabs__content">
+								<div class="tabs__body">
+									<div class="projects__galley">
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-2.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-12.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-3.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-5.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-6-2.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-14.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-7.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="projects__galley">
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-1.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-2.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-3.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-4.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-6-2.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-6.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="project-card">
+											<img class="project-card__img" alt="Image" loading="lazy" src="./assets/img/projects/image-7.webp">
+											<div class="project-card__body">
+												<div class="project-card__descr">
+													<div class="project-card__title">Фитнес-центр Energy Space</div>
+													<ul class="project-card__list">
+														<li class="project-card__item">
+															<img src="./assets/img/icons/fluent_square.svg" alt="Image" loading="lazy">
+															<p>Площадь: 1 200 м²</p>
+														</li>
+														<li class="project-card__item">
+															<img src="./assets/img/icons/location.svg" alt="Image" loading="lazy">
+															<p>Адрес: Luxembourg, Rue de Hollerich, 125</p>
+														</li>
+													</ul>
+													<div class="project-card__link link">
+														<span>Посмотреть проект</span>
+														<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="projects__all link">
+							<span>Смотреть все проекты</span>
+							<svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5 0.499999C11.5 0.223857 11.2761 -6.31051e-07 11 -7.57492e-07L6.5 -3.57097e-07C6.22386 -5.25684e-07 6 0.223857 6 0.499999C6 0.776142 6.22386 0.999999 6.5 1L10.5 0.999999L10.5 5C10.5 5.27614 10.7239 5.5 11 5.5C11.2761 5.5 11.5 5.27614 11.5 5L11.5 0.499999ZM1 10.5L1.35355 10.8536L11.3536 0.853553L11 0.499999L10.6464 0.146446L0.646447 10.1464L1 10.5Z" fill="currentColor"></path>
+							</svg>
+						</a>
+						<div class="projects__decor-1">
+							<img src="./assets/img/decor.svg" alt="Image" loading="lazy">
+						</div>
+						<div class="projects__decor-2">
+							<img src="./assets/img/decor.svg" alt="Image" loading="lazy">
+						</div>
+					</div>
+				</section>
+				<section class="faq">
+					<div class="faq__container">
+						<div class="faq__head lines-decor lines-decor--right">
+							<h2 class="faq__title title title--h2">
+								Часто задаваемые
+								<br>
+								<span>вопросы</span>
+							</h2>
+						</div>
+						<div class="faq__body">
+							<div class="faq__descr">
+								<div class="faq__text">Мы собрали самые популярные ответы, чтобы вам было проще сориентироваться</div>
+								<a data-fls-popup-link="popup-questions" href="#" class="faq__btn button button--hover-dark">
+									<span class="button__body">Не нашел ответ на свой вопрос</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</a>
+							</div>
+							<div class="faq__content">
+								<div data-fls-spollers="" class="spollers">
+									<details class="spollers__item" data-fls-spollers-open="">
+										<summary class="spollers__title">Сколько времени занимает ремонт «под ключ»?</summary>
+										<div class="spollers__body">
+											Всё зависит от площади и сложности проекта. Капитальный ремонт квартиры в среднем занимает
+                            2–3 месяца, офисных помещений — от 1 месяца. Мы фиксируем сроки в договоре и соблюдаем их.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Можно ли заказать только часть работ, например, ремонт санузла или кухни?</summary>
+										<div class="spollers__body">
+											Всё зависит от площади и сложности проекта. Капитальный ремонт квартиры в среднем занимает
+                            2–3 месяца, офисных помещений — от 1 месяца. Мы фиксируем сроки в договоре и соблюдаем их.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Какие материалы вы используете в работе?</summary>
+										<div class="spollers__body">
+											Всё зависит от площади и сложности проекта. Капитальный ремонт квартиры в среднем занимает
+                            2–3 месяца, офисных помещений — от 1 месяца. Мы фиксируем сроки в договоре и соблюдаем их.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Делаете ли вы перепланировку и согласовываете документы?</summary>
+										<div class="spollers__body">
+											Всё зависит от площади и сложности проекта. Капитальный ремонт квартиры в среднем занимает
+                            2–3 месяца, офисных помещений — от 1 месяца. Мы фиксируем сроки в договоре и соблюдаем их.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Как формируется стоимость ремонта?</summary>
+										<div class="spollers__body">
+											Всё зависит от площади и сложности проекта. Капитальный ремонт квартиры в среднем занимает
+                            2–3 месяца, офисных помещений — от 1 месяца. Мы фиксируем сроки в договоре и соблюдаем их.
+										</div>
+									</details>
+									<details class="spollers__item">
+										<summary class="spollers__title">Даёте ли вы гарантию на ремонт?</summary>
+										<div class="spollers__body">
+											Всё зависит от площади и сложности проекта. Капитальный ремонт квартиры в среднем занимает
+                            2–3 месяца, офисных помещений — от 1 месяца. Мы фиксируем сроки в договоре и соблюдаем их.
+										</div>
+									</details>
+								</div>
+							</div>
+						</div>
+						<div class="faq__decor-1">
+							<img src="./assets/img/decor.svg" alt="Image" loading="lazy">
+						</div>
+					</div>
+				</section>
+				<section class="textblock">
+					<div class="textblock__container">
+						<div class="textblock__head lines-decor">
+							<div class="textblock__title title title--h2">
+								<span>TS Constructions</span>
+								—
+								<br>
+								ремонт под ключ
+							</div>
+						</div>
+						<div data-fls-showmore="" class="textblock__body">
+							<div data-fls-showmore-content="365" class="textblock__content">
+								<h3>Ремонт и строительство требуют профессионального подхода</h3>
+								<p>
+									<b>Наш подход позволяет клиентам экономить время и средства</b>
+									, а также быть уверенными в
+                    результате.
+                    Четкий график выполнения работ и контроль на каждом этапе гарантируют соблюдение сроков. Мы
+                    понимаем, что ремонт и строительство требуют не только профессионального подхода, но и доверия между
+                    клиентом и исполнителем. Поэтому в работе мы делаем ставку на открытость и постоянный контакт с
+                    заказчиком. На каждом этапе вы получаете полную информацию о ходе проекта, будь то фото- или
+                    видеоотчеты, промежуточные акты или детализированная смета. Такой подход исключает недопонимания и
+                    позволяет уверенно двигаться к результату, который будет полностью соответствовать вашим ожиданиям.
+								</p>
+								<p>
+									Работаем как с частными клиентами, так и с бизнесом, создавая комфортные квартиры, современные офисы
+                    и коммерческие помещения. Основное внимание уделяем качеству и надежности, используя проверенные
+                    материалы и современные технологии. Наша команда успешно реализует проекты в Люксембурге и за его
+                    пределами, предлагая индивидуальные решения под каждую задачу. Мы берем на себя все этапы: от
+                    разработки концепции и составления сметы до сдачи объекта «под ключ».
+								</p>
+								<p>
+									Большое внимание уделяется подбору материалов и технологий. Мы сотрудничаем только с надежными
+                    поставщиками и используем продукцию ведущих брендов, которая зарекомендовала себя долговечностью и
+                    безопасностью. Благодаря этому наши проекты сохраняют свежий вид и функциональность на протяжении
+                    многих лет. Мы всегда предлагаем клиентам несколько вариантов решений, чтобы можно было выбрать
+                    оптимальное сочетание цены, качества и эстетики. Это позволяет находить баланс между практичностью и
+                    стилем в каждом проекте.
+								</p>
+								<p>
+									Наша компания ценит не только результат, но и сам процесс работы. Для нас важно, чтобы ремонт
+                    проходил максимально комфортно для клиента: без задержек, лишнего шума и ненужных хлопот. Мы берем
+                    на себя все организационные задачи, включая согласование документации, доставку материалов и
+                    контроль качества. Таким образом, заказчик получает не просто отремонтированное помещение, а готовое
+                    пространство, в котором можно жить, работать или вести бизнес сразу после завершения проекта.
+								</p>
+								<h3>Услуги в Люксембурге и за его пределами</h3>
+								<ul>
+									<li>ремонт коммерческих помещений</li>
+									<li>инженерные коммуникации</li>
+									<li>капитальный ремонт</li>
+									<li>фасадные работы</li>
+								</ul>
+							</div>
+							<button hidden data-fls-showmore-button="" type="button" class="textblock__more">
+								<span>Показать еще</span>
+								<span>Показать меньше</span>
+							</button>
+						</div>
+						<div class="textblock__decor-1">
+							<img src="./assets/img/decor.svg" alt="Image" loading="lazy">
+						</div>
+					</div>
+				</section>
+				<section class="letstalk">
+					<div class="letstalk__container">
+						<div class="letstalk__body">
+							<div class="letstalk__bg">
+								<img alt="Image" loading="lazy" src="./assets/img/img_form.webp">
+							</div>
+							<div class="letstalk__descr">
+								<h2 class="letstalk__title title title--h2">
+									Остались
+									<span>вопросы?</span>
+								</h2>
+								<div class="letstalk__text">
+									Оставьте заявку — и мы свяжемся с вами в ближайшее время. Расскажите нам о своём проекте, и мы
+                    подготовим для вас
+                    консультацию и предварительную смету
+								</div>
+							</div>
+							<form action="#" class="letstalk__form">
+								<div class="letstalk__inputs">
+									<div class="input-field input-field--white">
+										<label class="input-field__label">Имя*</label>
+										<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input-field__input">
+									</div>
+									<div class="input-field input-field--white">
+										<label class="input-field__label">Номер телефона*</label>
+										<input autocomplete="off" type="tel" name="tel" placeholder="+35 (___) ___ - __ - __" class="input-field__input is-error" data-fls-input-mask="+35 (999) 999 - 99 - 99">
+										<div class="input-field__error">Заполните поле “Номер телефона”</div>
+									</div>
+								</div>
+								<button type="submit" class="letstalk__send button-white button-white--red-text">
+									<span class="button__body">Отправить заявку</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer fixed-block-hide">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__info">
+							<a href="#" class="footer__logo">
+								<img src="./assets/img/logo.svg" alt="Image" loading="lazy">
+							</a>
+							<div class="footer__dev">
+								<p>Сайт разработан и поддерживается веб-студией</p>
+								<a href="#" class="footer__dev-logo">
+									<img src="./assets/img/logo-alicom.svg" alt="Image" loading="lazy">
+								</a>
+							</div>
+						</div>
+						<nav class="footer__menu">
+							<div class="footer__col">
+								<div class="footer__title">Информация</div>
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="#" class="footer__link">Реализованные проекты</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Сотрудничество</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">О нас</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Блог</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Контакты</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__col">
+								<div class="footer__title">Услуги</div>
+								<ul class="footer__list columns-2">
+									<li class="footer__item">
+										<a href="#" class="footer__link">Ремонт офисных помещений</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Капитальный и косметический ремонт квартир</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Ремонт коммерческих помещений</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Ремонт и отделка санузлов и кухонь</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Инженерные коммуникации</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Перепланировка</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Капитальный ремонт</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Кровельные работы</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Фасадные работы</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__contacts">
+								<div class="footer__block">
+									<div class="footer__title">Контакты</div>
+									<a href="tel:+352661442982" class="footer__contact">
+										<span class="footer__contact-icon">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.506 7.96C18.7925 10.7425 17.3445 13.2821 15.3133 15.3133C13.2821 17.3445 10.7425 18.7925 7.96 19.506C5.819 20.051 4 18.21 4 16V15C4 14.448 4.449 14.005 4.998 13.95C5.9084 13.8595 6.80207 13.6445 7.654 13.311L9.174 14.831C11.6489 13.6446 13.6446 11.6489 14.831 9.174L13.311 7.654C13.6448 6.80211 13.8602 5.90844 13.951 4.998C14.005 4.448 14.448 4 15 4H16C18.21 4 20.051 5.819 19.506 7.96Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+										<span>+35 (266) 144 29 82</span>
+									</a>
+								</div>
+								<div class="footer__block">
+									<div class="footer__title">Электронная почта</div>
+									<a href="mailto:alex.tsapar@gmail.com" class="footer__contact">
+										<span class="footer__contact-icon">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.75 6.75V17.25C21.75 17.6478 21.592 18.0294 21.3107 18.3107C21.0294 18.592 20.6478 18.75 20.25 18.75H3.75C3.35218 18.75 2.97064 18.592 2.68934 18.3107C2.40804 18.0294 2.25 17.6478 2.25 17.25V6.75M21.75 6.75C21.75 6.35218 21.592 5.97064 21.3107 5.68934C21.0294 5.40804 20.6478 5.25 20.25 5.25H3.75C3.35218 5.25 2.97064 5.40804 2.68934 5.68934C2.40804 5.97064 2.25 6.35218 2.25 6.75M21.75 6.75L12.8535 12.909C12.6027 13.0825 12.305 13.1755 12 13.1755C11.695 13.1755 11.3973 13.0825 11.1465 12.909L2.25 6.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+										<span>alex.tsapar@gmail.com</span>
+									</a>
+								</div>
+								<div class="footer__block">
+									<div class="footer__title">График работы</div>
+									<div class="footer__contact">
+										<span class="footer__contact-icon">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M11 8V13H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+										<span>08:00-16:00</span>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__socials">
+							<a href="#" class="footer__soc">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z" stroke="currentColor" stroke-width="1.5"></path>
+									<path d="M17.5 6.51002L17.51 6.49902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<a href="#" class="footer__soc">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<div class="footer__copy">Все авторские права защищены. ⓒTS Constructions development</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div data-fls-popup="popup" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/phone_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Бесплатная консультация</div>
+							<div class="popup__text">
+								Оставьте заявку — и мы свяжемся с вами в ближайшее время. Расскажите нам о своём проекте, и мы
+						подготовим для вас
+						консультацию и предварительную смету.
+							</div>
+						</div>
+						<form action="#" class="popup__form">
+							<div class="popup__inputs">
+								<div class="input-field">
+									<label class="input-field__label">Имя*</label>
+									<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input-field__input">
+								</div>
+								<div class="input-field">
+									<label class="input-field__label">Номер телефона*</label>
+									<input autocomplete="off" type="tel" name="tel" placeholder="+35 (___) ___ - __ - __" class="input-field__input" data-fls-input-mask="+35 (999) 999 - 99 - 99">
+								</div>
+							</div>
+							<button type="submit" class="popup__send button button--hover-dark">
+								<span class="button__body">Отправить заявку</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</form>
+						<button data-fls-popup-link="popup-success" type="button" class="popup__send button button--hover-dark">
+							<span class="button__body">Popup Success</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</button>
+						<button data-fls-popup-link="popup-error" type="button" class="popup__send button button--hover-dark">
+							<span class="button__body">Popup Error</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-questions" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/question_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Остались вопросы?</div>
+							<div class="popup__text">
+								Оставьте заявку — и мы свяжемся с вами в ближайшее время. Расскажите нам о своём проекте, и мы
+						подготовим для вас
+						консультацию и предварительную смету.
+							</div>
+						</div>
+						<form action="#" class="popup__form">
+							<div class="popup__inputs">
+								<div class="input-field">
+									<label class="input-field__label">Имя*</label>
+									<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input-field__input">
+								</div>
+								<div class="input-field">
+									<label class="input-field__label">Номер телефона*</label>
+									<input autocomplete="off" type="tel" name="tel" placeholder="+35 (___) ___ - __ - __" class="input-field__input" data-fls-input-mask="+35 (999) 999 - 99 - 99">
+								</div>
+							</div>
+							<button type="submit" class="popup__send button button--hover-dark">
+								<span class="button__body">Отправить заявку</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-success" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/tick_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Спасибо за заявку</div>
+							<div class="popup__text">
+								Мы получили ваши контакты. Наш менеджер свяжется
+								<br>
+								с Вами в рабочее время.
+							</div>
+						</div>
+						<a href="/" class="popup__btn button button--hover-dark">
+							<span class="button__body">Вернуться на главную</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-error" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/cross_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Упс...Что-то пошло не так</div>
+							<div class="popup__text">
+								Кажется, произошла ошибка. Но это не повод расстраиваться. Попробуйте обновить страницу —
+						возможно, это временно. Если проблема остается — напишите нам, и мы обязательно всё исправим.
+							</div>
+						</div>
+						<a href="/" class="popup__btn button button--hover-dark">
+							<span class="button__body">Вернуться на главную</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--cookies is-open">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/cookie_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Мы используем файлы cookie</div>
+							<div class="popup__text">
+								Этот веб-сайт использует основные файлы cookie для обеспечения правильной работы и отслеживания
+						файлов cookie, чтобы
+						понимать, как вы взаимодействуете с ним. Последний будет установлен только после соглашения.
+							</div>
+						</div>
+						<div class="popup__btns">
+							<button type="button" class="popup__btn button-empty">
+								<span class="button__body">Отклонить все</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+							<button type="button" class="popup__btn button button--hover-dark">
+								<span class="button__body">Принять все</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
