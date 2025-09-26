@@ -94,7 +94,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: text-shadow 0.3s;
+  transition: color 0.3s;
 }
 .textblock__more::after {
   content: "";
@@ -188,6 +188,7 @@
     color: var(--gray-color);
   }
   .textblock__more:hover {
-    text-shadow: 0.2px 0.2px currentColor, 0px 0.2px currentColor, -0.2px 0px currentColor, 0px -0.2px currentColor;
+    color: currentColor;
+    text-decoration: none;
   }
 }

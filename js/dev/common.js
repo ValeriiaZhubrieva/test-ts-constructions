@@ -112,6 +112,12 @@ let bodyLock = (delay = 500) => {
     }, delay);
   }
 };
+function getDigFormat(item, sepp = " ") {
+  return item.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1${sepp}`);
+}
+function uniqArray(array) {
+  return array.filter((item, index, self) => self.indexOf(item) === index);
+}
 function dataMediaQueries(array, dataSetValue) {
   const media = Array.from(array).filter((item) => item.dataset[dataSetValue]).map((item) => {
     const [value, type = "max"] = item.dataset[dataSetValue].split(",");
@@ -127,6 +133,19 @@ function dataMediaQueries(array, dataSetValue) {
     return { itemsArray, matchMedia };
   });
 }
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 20,
+        behavior: "smooth"
+      });
+    }
+  });
+});
 if (document.querySelector(".popup--cookies")) {
   let closePopupCookies = function() {
     popupCookies.classList.remove("is-open");
@@ -180,9 +199,11 @@ export {
   slideDown as b,
   setHash as c,
   dataMediaQueries as d,
-  bodyLock as e,
-  bodyUnlock as f,
+  getDigFormat as e,
+  bodyLock as f,
   getHash as g,
-  bodyLockStatus as h,
-  slideToggle as s
+  bodyUnlock as h,
+  bodyLockStatus as i,
+  slideToggle as s,
+  uniqArray as u
 };

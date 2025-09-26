@@ -1,4 +1,4 @@
-import { e as bodyLock, f as bodyUnlock, h as bodyLockStatus } from "./common.min.js";
+import { f as bodyLock, h as bodyUnlock, i as bodyLockStatus } from "./common.min.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) return;
@@ -331,50 +331,15 @@ class Popup {
 }
 document.querySelector("[data-fls-popup]") ? window.addEventListener("load", () => window.flsPopup = new Popup({})) : null;
 function menuInit() {
-  const html = document.documentElement;
-  const menuButtons = document.querySelectorAll("[data-fls-menu]");
-  const menu = document.querySelector(".menu");
-  if (!menuButtons.length || !menu) return;
-  menuButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      if (html.hasAttribute("data-fls-menu-open")) {
-        html.removeAttribute("data-fls-menu-open");
-        if (!html.hasAttribute("data-fls-popup-open")) {
-          bodyUnlock();
-        }
-      } else {
-        bodyLock();
-        html.setAttribute("data-fls-menu-open", "");
-      }
-    });
-  });
-  menu.addEventListener("click", (e) => {
-    if (e.target.closest(".menu__link")) {
-      html.removeAttribute("data-fls-menu-open");
-      if (!html.hasAttribute("data-fls-popup-open")) {
-        bodyUnlock();
-      }
-    }
-  });
-  document.addEventListener("click", (e) => {
-    if (!e.target.closest(".menu") && !e.target.closest("[data-fls-menu]") && !e.target.closest("[data-fls-popup]")) {
-      if (html.hasAttribute("data-fls-menu-open")) {
-        html.removeAttribute("data-fls-menu-open");
-        if (!html.hasAttribute("data-fls-popup-open")) {
-          bodyUnlock();
-        }
-      }
-    }
-  });
-  document.addEventListener("afterPopupClose", () => {
-    if (!html.hasAttribute("data-fls-menu-open") && !html.hasAttribute("data-fls-popup-open")) {
-      bodyUnlock();
+  document.addEventListener("click", function(e) {
+    if (e.target.closest("[data-fls-menu]")) {
+      document.documentElement.toggleAttribute("data-fls-menu-open");
+    } else if (!e.target.closest("[data-fls-menu]") && !e.target.closest(".menu") || e.target.closest(".menu__link")) {
+      document.documentElement.removeAttribute("data-fls-menu-open");
     }
   });
 }
-if (document.querySelector("[data-fls-menu]")) {
-  window.addEventListener("load", menuInit);
-}
+document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
 var inputmask_min$1 = { exports: {} };
 /*!
  * dist/inputmask.min

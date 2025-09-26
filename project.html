@@ -9,16 +9,18 @@
 		<link rel="preload" href="./assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>project</title>
-		<script type="module" crossorigin="" src="./js/common.min.js?v=1758874768026"></script>
-		<script type="module" crossorigin="" src="./js/popup.min.js?v=1758874768026"></script>
-		<script type="module" crossorigin="" src="./js/showmore.min.js?v=1758874768026"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1758874768026">
-		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1758874768026">
-		<link rel="stylesheet" crossorigin="" href="./css/services.min.css?v=1758874768026">
-		<link rel="stylesheet" crossorigin="" href="./css/promo.min.css?v=1758874768026">
-		<link rel="stylesheet" crossorigin="" href="./css/video-review.min.css?v=1758874768026">
-		<link rel="stylesheet" crossorigin="" href="./css/reviews.min.css?v=1758874768026">
-		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1758874768026">
+		<script type="module" crossorigin="" src="./js/common.min.js?v=1758898233566"></script>
+		<script type="module" crossorigin="" src="./js/popup.min.js?v=1758898233566"></script>
+		<script type="module" crossorigin="" src="./js/showmore.min.js?v=1758898233566"></script>
+		<script type="module" crossorigin="" src="./js/video-review.min.js?v=1758898233566"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/showmore.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/video-review.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/textpage.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/promo.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/reviews.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/textblock.min.css?v=1758898233566">
+		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1758898233566">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -254,49 +256,49 @@
 								ремонта
 							</h2>
 						</div>
-						<div class="gallery-block__filters" data-options-block="">
-							<button type="button" class="gallery-block__filter button-empty button-empty--dark is-active">
+						<div class="gallery-block__filters">
+							<button data-filter="all" type="button" class="gallery-block__filter button-empty button-empty--dark is-active">
 								<div class="button__body">Все</div>
 							</button>
-							<button type="button" class="gallery-block__filter button-empty button-empty--dark">
+							<button data-filter="kitchen" type="button" class="gallery-block__filter button-empty button-empty--dark">
 								<div class="button__body">Кухня</div>
 							</button>
-							<button type="button" class="gallery-block__filter button-empty button-empty--dark">
+							<button data-filter="bedroom" type="button" class="gallery-block__filter button-empty button-empty--dark">
 								<div class="button__body">Спальня</div>
 							</button>
-							<button type="button" class="gallery-block__filter button-empty button-empty--dark">
+							<button data-filter="corridor" type="button" class="gallery-block__filter button-empty button-empty--dark">
 								<div class="button__body">Коридор</div>
 							</button>
-							<button type="button" class="gallery-block__filter button-empty button-empty--dark">
+							<button data-filter="bathroom" type="button" class="gallery-block__filter button-empty button-empty--dark">
 								<div class="button__body">Ванная</div>
 							</button>
 						</div>
 						<div class="gallery-block__items">
-							<div class="gallery-block__item">
+							<div data-category="kitchen" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-2.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="kitchen" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-3.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="kitchen" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-3.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="bathroom" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-5.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="bathroom" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-7.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="corridor" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-6.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="bedroom" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-8.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="bedroom" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-9.webp">
 							</div>
-							<div class="gallery-block__item">
+							<div data-category="corridor" class="gallery-block__item">
 								<img alt="Image" loading="lazy" src="./assets/img/project/image-10.webp">
 							</div>
 						</div>

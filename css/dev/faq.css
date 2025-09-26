@@ -87,6 +87,9 @@
   gap: 20px;
 }
 .faq__descr {
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
   max-width: 520px;
   width: 100%;
   display: flex;
@@ -133,6 +136,7 @@
   .faq__descr {
     max-width: 100%;
     display: contents;
+    position: static;
   }
   .faq__btn {
     order: 1;

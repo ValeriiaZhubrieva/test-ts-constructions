@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>blog</title>
+		<script type="module" crossorigin="" src="./js/common.min.js?v=1758898233572"></script>
+		<script type="module" crossorigin="" src="./js/popup.min.js?v=1758898233572"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1758898233572">
+		<link rel="stylesheet" crossorigin="" href="./css/textpage.min.css?v=1758898233572">
+		<link rel="stylesheet" crossorigin="" href="./css/header-small.min.css?v=1758898233572">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1758898233572">
+		<link rel="stylesheet" crossorigin="" href="./css/pagination.min.css?v=1758898233572">
+		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1758898233572">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Услуги</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Реализованные проекты</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Сотрудничество</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">О нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Блог</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<a href="/" class="header__logo">
+							<img src="./assets/img/logo-dark.svg" alt="logo" loading="lazy">
+						</a>
+						<div class="header__actions fixed-block">
+							<a data-fls-popup-link="popup" href="#" class="header__contactus">
+								<span class="header__contactus-text">Связаться с нами</span>
+								<span class="header__contactus-icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</a>
+							<a href="tel:+352661442982" class="header__action">
+								<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.494 5.46C2.20749 8.24248 3.65555 10.7821 5.68671 12.8133C7.71788 14.8445 10.2575 16.2925 13.04 17.006C15.181 17.551 17 15.71 17 13.5L17 12.5C17 11.948 16.551 11.505 16.002 11.45C15.0916 11.3595 14.1979 11.1445 13.346 10.811L11.826 12.331C9.35113 11.1446 7.35541 9.14887 6.169 6.674L7.689 5.154C7.35516 4.30211 7.13982 3.40844 7.049 2.498C6.995 1.948 6.552 1.5 6 1.5L5 1.5C2.79 1.5 0.949 3.319 1.494 5.46Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<a href="mailto:alex.tsapar@gmail.com" class="header__action">
+								<svg width="22" height="15" viewbox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20.75 2.25L20.75 12.75C20.75 13.1478 20.592 13.5294 20.3107 13.8107C20.0294 14.092 19.6478 14.25 19.25 14.25L2.75 14.25C2.35217 14.25 1.97064 14.092 1.68934 13.8107C1.40803 13.5294 1.25 13.1478 1.25 12.75L1.25 2.25M20.75 2.25C20.75 1.85218 20.592 1.47065 20.3107 1.18934C20.0294 0.908036 19.6478 0.750001 19.25 0.750001L2.75 0.75C2.35218 0.75 1.97064 0.908035 1.68934 1.18934C1.40804 1.47064 1.25 1.85218 1.25 2.25M20.75 2.25L11.8535 8.409C11.6027 8.58253 11.305 8.67549 11 8.67549C10.695 8.67549 10.3973 8.58253 10.1465 8.409L1.25 2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<div class="header__lang lang-block">
+							<a href="#" class="lang-block__link is-active">Ru</a>
+							<a href="#" class="lang-block__link">En</a>
+							<a href="#" class="lang-block__link">Fr</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="header-small">
+					<div class="header-small__container">
+						<div class="header-small__left"></div>
+						<div class="header-small__center">
+							<a href="/" class="header-small__logo">
+								<img src="./assets/img/logo-dark.svg" alt="logo">
+							</a>
+						</div>
+						<div class="header-small__right">
+							<button data-fls-popup-link="popup" type="button" class="header-small__link contactus-link contactus-link--main">
+								<span class="contactus-link__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5 0.999999C11.5 0.723857 11.2761 0.499999 11 0.499999L6.5 0.5C6.22386 0.499999 6 0.723857 6 0.999999C6 1.27614 6.22386 1.5 6.5 1.5L10.5 1.5L10.5 5.5C10.5 5.77614 10.7239 6 11 6C11.2761 6 11.5 5.77614 11.5 5.5L11.5 0.999999ZM1 11L1.35355 11.3536L11.3536 1.35355L11 0.999999L10.6464 0.646446L0.646447 10.6464L1 11Z" fill="currentColor"></path>
+									</svg>
+								</span>
+								<span class="contactus-link__text">Связаться с нами</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<a href="#" class="breadcrumbs__link">
+							<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 7L8 2.5L15 7M13.5 6V13.5H2.5V6M6.5 9.5H9.5V13.5H6.5V9.5Z" stroke="currentColor" stroke-linejoin="round"></path>
+							</svg>
+						</a>
+						<a href="#" class="breadcrumbs__link">Главная страница</a>
+						<span class="breadcrumbs__link is-active">Блог</span>
+					</div>
+				</div>
+				<section class="blog">
+					<div class="blog__container">
+						<div class="blog__head lines-decor lines-decor--right">
+							<h2 class="blog__title title title--h2">Блог</h2>
+						</div>
+						<div class="blog__items">
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-1.webp">
+								</div>
+								<div class="blog-card__date">19 сентября 2025</div>
+								<a href="#" class="blog-card__title">5 ошибок при ремонте офиса</a>
+								<div class="blog-card__text">Разбираем самые частые просчёты и как их избежать.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-2.webp">
+								</div>
+								<div class="blog-card__date">3 июня 2025</div>
+								<a href="#" class="blog-card__title">Тренды дизайна интерьеров 2025</a>
+								<div class="blog-card__text">Что актуально в отделке, материалах и цветах.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-3.webp">
+								</div>
+								<div class="blog-card__date">21 мая 2025</div>
+								<a href="#" class="blog-card__title">Как рассчитать бюджет ремонта</a>
+								<div class="blog-card__text">Пошаговая инструкция для собственников.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-4.webp">
+								</div>
+								<div class="blog-card__date">16 мая 2025</div>
+								<a href="#" class="blog-card__title">Перепланировка: с чего начать</a>
+								<div class="blog-card__text">Правила, документы и лайфхаки.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-5.webp">
+								</div>
+								<div class="blog-card__date">8 апреля 2025</div>
+								<a href="#" class="blog-card__title">Ремонт без стресса</a>
+								<div class="blog-card__text">Как мы выстраиваем процесс, чтобы клиенту было спокойно.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-6.webp">
+								</div>
+								<div class="blog-card__date">4 апреля 2025</div>
+								<a href="#" class="blog-card__title">Фасадные работы: до и после</a>
+								<div class="blog-card__text">Примеры объектов, которые изменили облик здания.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-7.webp">
+								</div>
+								<div class="blog-card__date">24 марта 2025</div>
+								<a href="#" class="blog-card__title">Выбор материалов: практические советы</a>
+								<div class="blog-card__text">На что обращать внимание при покупке.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-8.webp">
+								</div>
+								<div class="blog-card__date">17 марта 2025</div>
+								<a href="#" class="blog-card__title">Капитальный ремонт квартиры: кейс</a>
+								<div class="blog-card__text">Подробный разбор одного из наших проектов.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<img alt="Image" loading="lazy" src="./assets/img/blog/image-9.webp">
+								</div>
+								<div class="blog-card__date">11 марта 2025</div>
+								<a href="#" class="blog-card__title">Сроки ремонта: реально ли успеть</a>
+								<div class="blog-card__text">Разбираем факторы, влияющие на график.</div>
+								<a href="#" class="blog-card__link">Читать статью</a>
+							</article>
+						</div>
+						<div class="pagination">
+							<a href="#" class="pagination__arrow disabled">
+								<svg width="16" height="8" viewbox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.578528 4.35209C0.383266 4.15683 0.383266 3.84024 0.578528 3.64498L3.76051 0.463001C3.95577 0.267739 4.27235 0.267739 4.46762 0.463001C4.66288 0.658263 4.66288 0.974846 4.46762 1.17011L1.63919 3.99854L4.46762 6.82696C4.66288 7.02222 4.66288 7.33881 4.46762 7.53407C4.27235 7.72933 3.95577 7.72933 3.76051 7.53407L0.578528 4.35209ZM15.0742 3.99854V4.49854L0.932082 4.49854V3.99854V3.49854L15.0742 3.49854V3.99854Z" fill="currentColor"></path>
+								</svg>
+							</a>
+							<ul class="pagination__list">
+								<li class="pagination__item">
+									<a href="#" class="pagination__link is-active">1</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__link">2</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__link">3</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__link">4</a>
+								</li>
+								<li class="pagination__item">
+									<a href="#" class="pagination__link">5</a>
+								</li>
+							</ul>
+							<a href="#" class="pagination__arrow">
+								<svg width="16" height="8" viewbox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.4215 4.35209C15.6167 4.15683 15.6167 3.84024 15.4215 3.64498L12.2395 0.463001C12.0442 0.267739 11.7276 0.267739 11.5324 0.463001C11.3371 0.658263 11.3371 0.974846 11.5324 1.17011L14.3608 3.99854L11.5324 6.82696C11.3371 7.02222 11.3371 7.33881 11.5324 7.53407C11.7276 7.72933 12.0442 7.72933 12.2395 7.53407L15.4215 4.35209ZM0.925781 3.99854V4.49854L15.0679 4.49854V3.99854V3.49854L0.925781 3.49854V3.99854Z" fill="currentColor"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="letstalk">
+					<div class="letstalk__container">
+						<div class="letstalk__body">
+							<div class="letstalk__bg">
+								<img alt="Image" loading="lazy" src="./assets/img/img_form.webp">
+							</div>
+							<div class="letstalk__descr">
+								<h2 class="letstalk__title title title--h2">
+									Остались
+									<span>вопросы?</span>
+								</h2>
+								<div class="letstalk__text">
+									Оставьте заявку — и мы свяжемся с вами в ближайшее время. Расскажите нам о своём проекте, и мы
+                    подготовим для вас
+                    консультацию и предварительную смету
+								</div>
+							</div>
+							<form action="#" class="letstalk__form">
+								<div class="letstalk__inputs">
+									<div class="input-field input-field--white">
+										<label class="input-field__label">Имя*</label>
+										<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input-field__input">
+									</div>
+									<div class="input-field input-field--white">
+										<label class="input-field__label">Номер телефона*</label>
+										<input autocomplete="off" type="tel" name="tel" placeholder="+35 (___) ___ - __ - __" class="input-field__input is-error" data-fls-input-mask="+35 (999) 999 - 99 - 99">
+										<div class="input-field__error">Заполните поле “Номер телефона”</div>
+									</div>
+								</div>
+								<button type="submit" class="letstalk__send button-white button-white--red-text">
+									<span class="button__body">Отправить заявку</span>
+									<span class="button__icon">
+										<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+										</svg>
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer fixed-block-hide">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__info">
+							<a href="#" class="footer__logo">
+								<img src="./assets/img/logo.svg" alt="Image" loading="lazy">
+							</a>
+							<div class="footer__dev">
+								<p>Сайт разработан и поддерживается веб-студией</p>
+								<a href="#" class="footer__dev-logo">
+									<img src="./assets/img/logo-alicom.svg" alt="Image" loading="lazy">
+								</a>
+							</div>
+						</div>
+						<nav class="footer__menu">
+							<div class="footer__col">
+								<div class="footer__title">Информация</div>
+								<ul class="footer__list">
+									<li class="footer__item">
+										<a href="#" class="footer__link">Реализованные проекты</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Сотрудничество</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">О нас</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Блог</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Контакты</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__col">
+								<div class="footer__title">Услуги</div>
+								<ul class="footer__list columns-2">
+									<li class="footer__item">
+										<a href="#" class="footer__link">Ремонт офисных помещений</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Капитальный и косметический ремонт квартир</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Ремонт коммерческих помещений</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Ремонт и отделка санузлов и кухонь</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Инженерные коммуникации</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Перепланировка</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Капитальный ремонт</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Кровельные работы</a>
+									</li>
+									<li class="footer__item">
+										<a href="#" class="footer__link">Фасадные работы</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__contacts">
+								<div class="footer__block">
+									<div class="footer__title">Контакты</div>
+									<a href="tel:+352661442982" class="footer__contact">
+										<span class="footer__contact-icon">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.506 7.96C18.7925 10.7425 17.3445 13.2821 15.3133 15.3133C13.2821 17.3445 10.7425 18.7925 7.96 19.506C5.819 20.051 4 18.21 4 16V15C4 14.448 4.449 14.005 4.998 13.95C5.9084 13.8595 6.80207 13.6445 7.654 13.311L9.174 14.831C11.6489 13.6446 13.6446 11.6489 14.831 9.174L13.311 7.654C13.6448 6.80211 13.8602 5.90844 13.951 4.998C14.005 4.448 14.448 4 15 4H16C18.21 4 20.051 5.819 19.506 7.96Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+										<span>+35 (266) 144 29 82</span>
+									</a>
+								</div>
+								<div class="footer__block">
+									<div class="footer__title">Электронная почта</div>
+									<a href="mailto:alex.tsapar@gmail.com" class="footer__contact">
+										<span class="footer__contact-icon">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M21.75 6.75V17.25C21.75 17.6478 21.592 18.0294 21.3107 18.3107C21.0294 18.592 20.6478 18.75 20.25 18.75H3.75C3.35218 18.75 2.97064 18.592 2.68934 18.3107C2.40804 18.0294 2.25 17.6478 2.25 17.25V6.75M21.75 6.75C21.75 6.35218 21.592 5.97064 21.3107 5.68934C21.0294 5.40804 20.6478 5.25 20.25 5.25H3.75C3.35218 5.25 2.97064 5.40804 2.68934 5.68934C2.40804 5.97064 2.25 6.35218 2.25 6.75M21.75 6.75L12.8535 12.909C12.6027 13.0825 12.305 13.1755 12 13.1755C11.695 13.1755 11.3973 13.0825 11.1465 12.909L2.25 6.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+										<span>alex.tsapar@gmail.com</span>
+									</a>
+								</div>
+								<div class="footer__block">
+									<div class="footer__title">График работы</div>
+									<div class="footer__contact">
+										<span class="footer__contact-icon">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M11 8V13H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</span>
+										<span>08:00-16:00</span>
+									</div>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__socials">
+							<a href="#" class="footer__soc">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z" stroke="currentColor" stroke-width="1.5"></path>
+									<path d="M17.5 6.51002L17.51 6.49902" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+							<a href="#" class="footer__soc">
+								<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a>
+						</div>
+						<div class="footer__copy">Все авторские права защищены. ⓒTS Constructions development</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div data-fls-popup="popup" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/phone_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Бесплатная консультация</div>
+							<div class="popup__text">
+								Оставьте заявку — и мы свяжемся с вами в ближайшее время. Расскажите нам о своём проекте, и мы
+						подготовим для вас
+						консультацию и предварительную смету.
+							</div>
+						</div>
+						<form action="#" class="popup__form">
+							<div class="popup__inputs">
+								<div class="input-field">
+									<label class="input-field__label">Имя*</label>
+									<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input-field__input">
+								</div>
+								<div class="input-field">
+									<label class="input-field__label">Номер телефона*</label>
+									<input autocomplete="off" type="tel" name="tel" placeholder="+35 (___) ___ - __ - __" class="input-field__input" data-fls-input-mask="+35 (999) 999 - 99 - 99">
+								</div>
+							</div>
+							<button type="submit" class="popup__send button button--hover-dark">
+								<span class="button__body">Отправить заявку</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</form>
+						<button data-fls-popup-link="popup-success" type="button" class="popup__send button button--hover-dark">
+							<span class="button__body">Popup Success</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</button>
+						<button data-fls-popup-link="popup-error" type="button" class="popup__send button button--hover-dark">
+							<span class="button__body">Popup Error</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-questions" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/question_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Остались вопросы?</div>
+							<div class="popup__text">
+								Оставьте заявку — и мы свяжемся с вами в ближайшее время. Расскажите нам о своём проекте, и мы
+						подготовим для вас
+						консультацию и предварительную смету.
+							</div>
+						</div>
+						<form action="#" class="popup__form">
+							<div class="popup__inputs">
+								<div class="input-field">
+									<label class="input-field__label">Имя*</label>
+									<input autocomplete="off" type="text" name="name" placeholder="Имя" class="input-field__input">
+								</div>
+								<div class="input-field">
+									<label class="input-field__label">Номер телефона*</label>
+									<input autocomplete="off" type="tel" name="tel" placeholder="+35 (___) ___ - __ - __" class="input-field__input" data-fls-input-mask="+35 (999) 999 - 99 - 99">
+								</div>
+							</div>
+							<button type="submit" class="popup__send button button--hover-dark">
+								<span class="button__body">Отправить заявку</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-success" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/tick_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Спасибо за заявку</div>
+							<div class="popup__text">
+								Мы получили ваши контакты. Наш менеджер свяжется
+								<br>
+								с Вами в рабочее время.
+							</div>
+						</div>
+						<a href="/" class="popup__btn button button--hover-dark">
+							<span class="button__body">Вернуться на главную</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-error" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/cross_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Упс...Что-то пошло не так</div>
+							<div class="popup__text">
+								Кажется, произошла ошибка. Но это не повод расстраиваться. Попробуйте обновить страницу —
+						возможно, это временно. Если проблема остается — напишите нам, и мы обязательно всё исправим.
+							</div>
+						</div>
+						<a href="/" class="popup__btn button button--hover-dark">
+							<span class="button__body">Вернуться на главную</span>
+							<span class="button__icon">
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--cookies is-open" data-fls-lp="">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.5242 20.5237L1.47656 1.47607M20.5242 1.47607L1.47656 20.5237" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__icon">
+								<img src="./assets/img/icons/cookie_icon.svg" alt="Image" loading="lazy">
+							</div>
+							<div class="popup__title title title--h3">Мы используем файлы cookie</div>
+							<div class="popup__text">
+								Этот веб-сайт использует основные файлы cookie для обеспечения правильной работы и отслеживания
+						файлов cookie, чтобы
+						понимать, как вы взаимодействуете с ним. Последний будет установлен только после соглашения.
+							</div>
+						</div>
+						<div class="popup__btns">
+							<button type="button" class="popup__btn button-empty">
+								<span class="button__body">Отклонить все</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+							<button type="button" class="popup__btn button button--hover-dark">
+								<span class="button__body">Принять все</span>
+								<span class="button__icon">
+									<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.5684 1.00146C11.5684 0.725322 11.3445 0.501464 11.0684 0.501464L6.56836 0.501464C6.29222 0.501464 6.06836 0.725322 6.06836 1.00146C6.06836 1.27761 6.29222 1.50146 6.56836 1.50146L10.5684 1.50146L10.5684 5.50146C10.5684 5.77761 10.7922 6.00146 11.0684 6.00146C11.3445 6.00146 11.5684 5.77761 11.5684 5.50146L11.5684 1.00146ZM1.06836 11.0015L1.42191 11.355L11.4219 1.35502L11.0684 1.00146L10.7148 0.647911L0.714806 10.6479L1.06836 11.0015Z" fill="currentColor"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -192,6 +192,14 @@
   flex-direction: column;
   gap: 8px;
 }
+.innumbers__item-title {
+  display: flex;
+  align-items: center;
+}
+.innumbers__item-title span {
+  font-weight: inherit;
+  line-height: 100%;
+}
 .innumbers__item-text {
   line-height: 130%;
   letter-spacing: -0.02em;
