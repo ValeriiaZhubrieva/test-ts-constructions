@@ -176,13 +176,13 @@ function addActiveBtnSClass(optionsBlocks, activeClass) {
 }
 addActiveBtnSClass("[data-options-block]", "is-active");
 export {
-  setHash as a,
-  slideUp as b,
-  slideToggle as c,
+  slideUp as a,
+  slideDown as b,
+  setHash as c,
   dataMediaQueries as d,
   bodyLock as e,
   bodyUnlock as f,
   getHash as g,
   bodyLockStatus as h,
-  slideDown as s
+  slideToggle as s
 };
