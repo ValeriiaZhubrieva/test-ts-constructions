@@ -50,18 +50,6 @@
 .textblock__body h1 {
   font-weight: 600;
 }
-.textblock__body h3 {
-  font-size: 28px;
-}
-.textblock__body h4 {
-  font-size: 20px;
-}
-.textblock__body h5 {
-  font-size: 18px;
-}
-.textblock__body h6 {
-  font-size: 16px;
-}
 .textblock__body ul,
 .textblock__body ol {
   padding-left: 25px;
@@ -140,8 +128,16 @@
   .textblock__head {
     margin-bottom: 32px;
   }
+}
+@media (max-width: 29.99875em) {
+  .textblock__body h1 {
+    font-size: 34px;
+  }
+  .textblock__body h2 {
+    font-size: 28px;
+  }
   .textblock__body h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .textblock__body h4 {
     font-size: 18px;
@@ -149,13 +145,8 @@
   .textblock__body h5 {
     font-size: 16px;
   }
-}
-@media (max-width: 29.99875em) {
-  .textblock__body h1 {
-    font-size: 40px;
-  }
-  .textblock__body h2 {
-    font-size: 32px;
+  .textblock__body h6 {
+    font-size: 14px;
   }
   .textblock__more {
     font-size: 14px;
@@ -163,10 +154,22 @@
 }
 @media (min-width: 29.99875em) and (max-width: 102.5em) {
   .textblock__body h1 {
-    font-size: clamp( 40px , 20.13910105px  +  4.1378596921vw , 88px );
+    font-size: clamp( 34px , 11.6564886812px  +  4.6550921536vw , 88px );
   }
   .textblock__body h2 {
-    font-size: clamp( 32px , 25.37970035px  +  1.379286564vw , 48px );
+    font-size: clamp( 28px , 19.7246254375px  +  1.724108205vw , 48px );
+  }
+  .textblock__body h3 {
+    font-size: clamp( 20px , 16.689850175px  +  0.689643282vw , 28px );
+  }
+  .textblock__body h4 {
+    font-size: clamp( 18px , 17.1724625437px  +  0.1724108205vw , 20px );
+  }
+  .textblock__body h5 {
+    font-size: clamp( 16px , 15.1724625437px  +  0.1724108205vw , 18px );
+  }
+  .textblock__body h6 {
+    font-size: clamp( 14px , 13.1724625437px  +  0.1724108205vw , 16px );
   }
 }
 @media (min-width: 47.99875em) {
@@ -180,6 +183,18 @@
   }
   .textblock__body h2 {
     font-size: 48px;
+  }
+  .textblock__body h3 {
+    font-size: 28px;
+  }
+  .textblock__body h4 {
+    font-size: 20px;
+  }
+  .textblock__body h5 {
+    font-size: 18px;
+  }
+  .textblock__body h6 {
+    font-size: 16px;
   }
 }
 @media (any-hover: hover) {

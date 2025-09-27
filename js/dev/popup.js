@@ -331,15 +331,50 @@ class Popup {
 }
 document.querySelector("[data-fls-popup]") ? window.addEventListener("load", () => window.flsPopup = new Popup({})) : null;
 function menuInit() {
-  document.addEventListener("click", function(e) {
-    if (e.target.closest("[data-fls-menu]")) {
-      document.documentElement.toggleAttribute("data-fls-menu-open");
-    } else if (!e.target.closest("[data-fls-menu]") && !e.target.closest(".menu") || e.target.closest(".menu__link")) {
-      document.documentElement.removeAttribute("data-fls-menu-open");
+  const html = document.documentElement;
+  const menuButtons = document.querySelectorAll("[data-fls-menu]");
+  const menu = document.querySelector(".menu");
+  if (!menuButtons.length || !menu) return;
+  menuButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (html.hasAttribute("data-fls-menu-open")) {
+        html.removeAttribute("data-fls-menu-open");
+        if (!html.hasAttribute("data-fls-popup-open")) {
+          bodyUnlock();
+        }
+      } else {
+        bodyLock();
+        html.setAttribute("data-fls-menu-open", "");
+      }
+    });
+  });
+  menu.addEventListener("click", (e) => {
+    if (e.target.closest(".menu__link")) {
+      html.removeAttribute("data-fls-menu-open");
+      if (!html.hasAttribute("data-fls-popup-open")) {
+        bodyUnlock();
+      }
+    }
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".menu") && !e.target.closest("[data-fls-menu]") && !e.target.closest("[data-fls-popup]")) {
+      if (html.hasAttribute("data-fls-menu-open")) {
+        html.removeAttribute("data-fls-menu-open");
+        if (!html.hasAttribute("data-fls-popup-open")) {
+          bodyUnlock();
+        }
+      }
+    }
+  });
+  document.addEventListener("afterPopupClose", () => {
+    if (!html.hasAttribute("data-fls-menu-open") && !html.hasAttribute("data-fls-popup-open")) {
+      bodyUnlock();
     }
   });
 }
-document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
+if (document.querySelector("[data-fls-menu]")) {
+  window.addEventListener("load", menuInit);
+}
 var inputmask_min$1 = { exports: {} };
 /*!
  * dist/inputmask.min

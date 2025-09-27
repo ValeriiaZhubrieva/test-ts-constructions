@@ -49,18 +49,6 @@
 .aboutus__body h1 {
   font-weight: 600;
 }
-.aboutus__body h3 {
-  font-size: 28px;
-}
-.aboutus__body h4 {
-  font-size: 20px;
-}
-.aboutus__body h5 {
-  font-size: 18px;
-}
-.aboutus__body h6 {
-  font-size: 16px;
-}
 .aboutus__body ul,
 .aboutus__body ol {
   padding-left: 25px;
@@ -172,8 +160,6 @@
   margin-bottom: 120px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--text-color);
-  color: var(--bg-color);
 }
 .innumbers__head {
   margin-bottom: 40px;
@@ -263,15 +249,6 @@
   .aboutus__head {
     margin-bottom: 24px;
   }
-  .aboutus__body h3 {
-    font-size: 24px;
-  }
-  .aboutus__body h4 {
-    font-size: 18px;
-  }
-  .aboutus__body h5 {
-    font-size: 16px;
-  }
   .aboutus__body {
     grid-template-columns: 1fr;
   }
@@ -305,10 +282,22 @@
 }
 @media (max-width: 29.99875em) {
   .aboutus__body h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
   .aboutus__body h2 {
-    font-size: 32px;
+    font-size: 28px;
+  }
+  .aboutus__body h3 {
+    font-size: 20px;
+  }
+  .aboutus__body h4 {
+    font-size: 18px;
+  }
+  .aboutus__body h5 {
+    font-size: 16px;
+  }
+  .aboutus__body h6 {
+    font-size: 14px;
   }
   .aboutus__img {
     min-height: 200px;
@@ -335,10 +324,22 @@
 }
 @media (min-width: 29.99875em) and (max-width: 102.5em) {
   .aboutus__body h1 {
-    font-size: clamp( 40px , 20.13910105px  +  4.1378596921vw , 88px );
+    font-size: clamp( 34px , 11.6564886812px  +  4.6550921536vw , 88px );
   }
   .aboutus__body h2 {
-    font-size: clamp( 32px , 25.37970035px  +  1.379286564vw , 48px );
+    font-size: clamp( 28px , 19.7246254375px  +  1.724108205vw , 48px );
+  }
+  .aboutus__body h3 {
+    font-size: clamp( 20px , 16.689850175px  +  0.689643282vw , 28px );
+  }
+  .aboutus__body h4 {
+    font-size: clamp( 18px , 17.1724625437px  +  0.1724108205vw , 20px );
+  }
+  .aboutus__body h5 {
+    font-size: clamp( 16px , 15.1724625437px  +  0.1724108205vw , 18px );
+  }
+  .aboutus__body h6 {
+    font-size: clamp( 14px , 13.1724625437px  +  0.1724108205vw , 16px );
   }
   .team__item-img {
     max-width: clamp( 70px , -4.4783710626px  +  15.5169738453vw , 250px );
@@ -358,6 +359,18 @@
   }
   .aboutus__body h2 {
     font-size: 48px;
+  }
+  .aboutus__body h3 {
+    font-size: 28px;
+  }
+  .aboutus__body h4 {
+    font-size: 20px;
+  }
+  .aboutus__body h5 {
+    font-size: 18px;
+  }
+  .aboutus__body h6 {
+    font-size: 16px;
   }
   .team__item-img {
     max-width: 250px;
